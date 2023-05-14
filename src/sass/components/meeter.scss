@@ -1,0 +1,113 @@
+.meeter {
+  margin-top: 20rem;
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 40rem);
+    grid-template-rows: repeat(2, 25rem);
+    justify-content: center;
+
+    .one {
+      border: 1px solid rgba($color: grey, $alpha: 0.5);
+      h3 {
+        color: $primary-color;
+        font-weight: bold;
+      }
+    }
+    .two {
+      border: 1px solid rgba($color: grey, $alpha: 0.5);
+      border-left: 0;
+      h3 {
+        color: $secondary-color;
+        font-weight: bold;
+      }
+    }
+    .three {
+      border: 1px solid rgba($color: grey, $alpha: 0.5);
+      border-top: 0;
+      h3 {
+        color: $secondary-color;
+        font-weight: bold;
+      }
+    }
+    .four {
+      h3 {
+        color: $primary-color;
+        font-weight: bold;
+      }
+      border: 1px solid rgba($color: grey, $alpha: 0.5);
+      border-top: 0;
+      border-left: 0;
+    }
+    .box {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// @media screen and (max-width: 930px) {
+//   .meeter {
+//     .boxes {
+//       grid-template-columns: repeat(2, 30rem);
+//       grid-template-rows: repeat(2, 25rem);
+//     }
+//   }
+// }
+
+@media screen and (min-width: 500px) {
+  .meeter {
+    .boxes {
+      grid-template-columns: repeat(2, 20rem);
+      grid-template-rows: repeat(2, 15rem);
+      .box {
+        .title {
+          h3 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .meeter {
+    .boxes {
+      grid-template-columns: repeat(2, 25rem);
+      grid-template-rows: repeat(2, 15rem);
+      .box {
+        .title {
+          h3 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .meeter {
+    .boxes {
+      grid-template-columns: repeat(2, 30rem);
+      grid-template-rows: repeat(2, 20rem);
+      .box {
+        .title {
+          h3 {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

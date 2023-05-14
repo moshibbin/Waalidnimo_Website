@@ -1,0 +1,94 @@
+.benefit {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-top: 20rem;
+  .content {
+    text-transform: capitalize;
+    .title {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .color {
+      color: $secondary-color;
+      font-weight: bold;
+    }
+    .btn {
+      border-radius: 0.4rem;
+      width: fit-content;
+      margin: 2rem 0;
+    }
+  }
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .benefit {
+    .content {
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .benefit {
+    .content {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 930px) {
+  .benefit {
+    grid-template-columns: repeat(2, 1fr);
+
+    .content {
+      margin-top: 2rem;
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .image {
+      img {
+        width: 85%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1040px) {
+  .benefit {
+    .content {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .benefit {
+    gap: 5rem;
+    .content {
+      h2 {
+        font-size: 4rem;
+      }
+    }
+    .image {
+      img {
+        width: 85%;
+      }
+    }
+  }
+}

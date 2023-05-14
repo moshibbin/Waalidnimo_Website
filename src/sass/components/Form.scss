@@ -1,0 +1,146 @@
+.contact-form {
+  margin: 20rem auto;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  .content {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    span {
+      p {
+        background-color: rgba($color: $primary-color, $alpha: 0.2);
+        width: fit-content;
+        padding: 0.4rem 1rem;
+        border-radius: 4rem;
+        font-size: 1.5rem;
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+    h2 {
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .information {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 2rem 0;
+      gap: 2rem;
+      .boxe {
+        display: flex;
+        gap: 2rem;
+        .icon {
+          background-color: rgba($color: $primary-color, $alpha: 0.4);
+          width: fit-content;
+          padding: 1.5rem;
+          font-size: 2.8rem;
+          border-radius: 0.8rem;
+          color: $primary-color;
+        }
+        .title {
+          h6 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding-bottom: 0.4rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .socail {
+      display: grid;
+      gap: 2rem;
+
+      align-items: center;
+      p {
+        font-weight: 500;
+        font-size: 2rem;
+      }
+      .icons {
+        display: flex;
+        gap: 2rem;
+        color: white;
+        font-size: 2rem;
+        .icon-cl {
+          background-color: $black-color;
+          border-radius: 100%;
+          padding: 0.5rem;
+          &:hover {
+            background-color: $primary-color;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+  .form-feild {
+    .form {
+      background-color: rgba($color: $secondary-color, $alpha: 0.5);
+      border-radius: 0.8rem;
+      padding: 4rem 6rem;
+      display: grid;
+      gap: 2rem;
+
+      textarea {
+        border-radius: 0.8rem;
+      }
+      .feild {
+        padding: 1.7rem;
+        border: 0;
+        border-radius: 0.4rem;
+        &:hover {
+          border: 0;
+        }
+      }
+      .btn {
+        width: fit-content;
+        border-radius: 5rem;
+        padding: 2rem 5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+    .content {
+      .information {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      .socail {
+        display: flex;
+        gap: 10rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1100px) {
+  .contact-form {
+    grid-template-columns: repeat(2, 1fr);
+    .content {
+      .information {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+      }
+      .socail {
+        display: flex;
+        gap: 10rem;
+      }
+    }
+    .form-feild {
+      .form {
+        width: 60%;
+      }
+    }
+  }
+}

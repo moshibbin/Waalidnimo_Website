@@ -1,0 +1,49 @@
+.rahma {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 25rem;
+  align-items: center;
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    .info {
+      background-color: white;
+      border: 1px solid rgba($color: gray, $alpha: 0.3);
+      border-radius: 0.8rem;
+      padding: 5rem;
+      p {
+        font-size: 1.5rem;
+      }
+      h5 {
+        font-size: 2rem;
+      }
+      h6 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .rahma {
+    grid-template-columns: repeat(2, 1fr);
+    .content {
+      margin: 0 5rem;
+    }
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .rahma {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

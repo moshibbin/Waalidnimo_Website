@@ -1,0 +1,59 @@
+.metter2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 24rem);
+  margin-top: 20rem;
+  gap: 5rem;
+  .secondary-icon {
+    background-color: red;
+  }
+  .content {
+    padding-top: 6rem;
+    text-align: center;
+    .icon {
+      background-color: $primary-color;
+      padding: 2rem 2.5rem;
+      border-radius: 100%;
+      color: white;
+    }
+    .icon-sc {
+      background-color: $secondary-color;
+    }
+    border: 2px solid rgba($color: gray, $alpha: 0.3);
+    border-radius: 0.4rem;
+    h3 {
+      padding-top: 2rem;
+      font-size: 3em;
+      font-weight: 500;
+    }
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .metter2 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 24rem);
+    .content {
+      h3 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1030px) {
+  .metter2 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 24rem);
+    .content {
+      h3 {
+        font-size: 3.5rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

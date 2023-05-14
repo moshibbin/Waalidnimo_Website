@@ -1,0 +1,68 @@
+.community {
+  background-color: $primary-color;
+  display: grid;
+  margin-top: 20rem;
+
+  .content {
+    color: $white-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    h2 {
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .btn {
+      border-radius: 0.4rem;
+      background-color: $primary-color;
+      color: white;
+      border: 1px solid white;
+      display: flex;
+      width: fit-content;
+      gap: 1rem;
+      font-size: 2rem;
+      img {
+        width: 2rem;
+      }
+    }
+  }
+  .image {
+    img {
+      position: relative;
+      top: 1rem;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .community {
+    .content {
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .community {
+    .content {
+      h2 {
+        font-size: 4rem;
+      }
+      p {
+        width: 60%;
+      }
+    }
+  }
+}

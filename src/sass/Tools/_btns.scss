@@ -1,0 +1,27 @@
+.btn {
+  border: 0;
+  padding: 1.7rem 4rem;
+  font-size: 1.5rem;
+  border-radius: 10rem;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: #002b88;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+}
+.btn-secondary {
+  background-color: $secondary-color;
+  color: white;
+  font-weight: bold;
+  &:hover {
+    background-color: #002b88;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+}

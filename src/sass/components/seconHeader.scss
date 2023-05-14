@@ -1,0 +1,31 @@
+.second-header {
+  background-color: $primary-color;
+  height: 50rem;
+  padding-top: 3rem;
+  color: white;
+  position: relative;
+  top: 10rem;
+  text-align: center;
+  .content {
+    padding-top: 18rem;
+
+    h3 {
+      font-size: 5rem;
+    }
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      gap: 1rem;
+      font-size: 1.7rem;
+      padding: 2rem 0;
+      p {
+        cursor: pointer;
+        &:hover {
+          opacity: 70%;
+        }
+      }
+    }
+  }
+}
