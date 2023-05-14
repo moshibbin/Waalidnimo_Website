@@ -57,7 +57,7 @@ const Services2 = () => {
     <div className="services2 container">
       Features
       <div className="header">
-        <h2>Tilmaamahayaga</h2>
+        <h2></h2>
         <p>
           walidnimo waxay waalidka ka caawisaa ku dhaqanka iyo wacyigalinta
           walidnimida wanagsan iyo bandhiga aqooneedyo iyo dhiri galin kusaabsan

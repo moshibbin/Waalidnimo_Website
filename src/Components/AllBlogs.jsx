@@ -44,7 +44,7 @@ const AllBlogs = () => {
       <h2>Get News with EduBlink</h2>
       <div className="blogList">
         {allPostsData &&
-          allPostsData.slice(0, 4).map((blog, index) => (
+          allPostsData.map((blog, index) => (
             <div className="item" key={index}>
               <img src={blog.mainImage.asset.url} alt="" />
               <div className="content">
